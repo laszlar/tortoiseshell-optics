@@ -1,9 +1,96 @@
 ﻿html {
 	font-size: 18px;
-	line-height: 1.4px;
 }
 
 body {
 	font-family: Helvetica;
+		line-height: 1.4rem;
 }
 
+div {
+	display: block;
+}
+
+ul {
+	display: block;
+}
+
+@media only screen and (min-width: 480px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.fullscreen-menu {
+		display: none;
+	}
+}
+
+/*///HEADER///*/
+
+header {
+	background-image: url("../images/glasses-bg.png");
+	height: 30rem;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 1rem;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+}
+
+nav {
+	padding: 1rem 0;
+	background-color: cadetblue;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav div {
+	display: flex;
+	align-items: center;
+}
+
+.header-logo {
+	padding: 1rem 1rem 1rem 2rem;
+	height: 1.5rem;
+}
+
+ul li {
+	display: inline;
+	padding: 0 1rem;
+}
+
+.fullscreen-menu {
+	padding: 0 1rem;
+}
+
+header .flex {
+	justify-content: flex-end;
+}
+
+.flex {
+	display: flex;
+}
+
+.main-silly-banner {
+	background-color: white;
+	padding: 0.75rem 5rem;
+	display: inline-block;
+	margin-top: 10rem;
+	margin-right: -2rem;
+	line-height: 1.4rem;
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0.67rem 0;
+}
