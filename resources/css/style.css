@@ -15,16 +15,150 @@ ul {
 	display: block;
 }
 
+@media only screen and (min-width: 1024px) {
+	header {
+		padding-top: 1rem;
+	}
+
+	nav {
+		padding: 1rem 0;
+	}
+
+	.main-silly-banner {
+		margin-top: 10rem;
+		margin-right: -2rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	header {
+		max-height: 22rem;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	nav .container {
+		max-width: 100%;
+	}
+
+	.main-silly-banner {
+	padding: 0.75rem 4rem;
+	margin-top: 5rem;
+	margin-right: 2rem;
+}
+
+	h1 {
+		font-size: 1.33rem;
+	}
+
+}
+
+
 @media only screen and (min-width: 480px) {
+	header {
+		background-position: center;
+	}
+
 	.mobile-menu {
 		display: none;
+	}
+
+	header .flex {
+		justify-content: flex-end;
+	}
+
+	h1 {
+		font-size: 2rem;
+		margin: 0.67rem 0;
+	}
+
+	.main-silly-banner {
+		padding: 0.75rem 5rem;
+	}
+
+	.philosophy {
+		width: 35%;
+		justify-content: space-between;
+	}
+
+	.philosophy .title {
+		max-width: 10rem;
+	}
+
+	.appointments .title {
+		max-width: 10rem;
+	}
+
+	.appointments {
+		width: 35%;
 	}
 }
 
 @media only screen and (max-width: 480px) {
+	header {
+		max-height: 17rem;
+		background-position: 20%;
+	}
+
+	nav {
+		padding: 0.10rem 0;
+	}
+
 	.fullscreen-menu {
 		display: none;
 	}
+
+	.main-silly-banner {
+		width: 100%;
+		padding: 0.25rem 4rem;
+		margin-top: 9rem;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.flex .container {
+		width: 100%;
+	}
+
+	header .flex {
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 1rem;
+		margin: 0;
+	}
+
+	.philosophy {
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 4rem;
+	}
+
+	.philosophy .title {
+		width: 100%;
+		margin: 0;
+	}
+
+	.appointments {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.appointments .title {
+		width: 100%;
+	}
+
+	.philosophy-info {
+		font-size: 0.77rem;
+	}
+
+	.appointments-info {
+		font-size: 0.77rem;
+	}
+
 }
 
 /*///HEADER///*/
@@ -33,10 +167,8 @@ header {
 	background-image: url("../images/glasses-bg.png");
 	height: 30rem;
 	width: 100%;
-	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 1rem;
 }
 
 .container {
@@ -45,7 +177,6 @@ header {
 }
 
 nav {
-	padding: 1rem 0;
 	background-color: cadetblue;
 	color: white;
 	display: flex;
@@ -72,25 +203,121 @@ ul li {
 	padding: 0 1rem;
 }
 
-header .flex {
-	justify-content: flex-end;
-}
-
 .flex {
 	display: flex;
 }
 
 .main-silly-banner {
 	background-color: white;
-	padding: 0.75rem 5rem;
 	display: inline-block;
-	margin-top: 10rem;
-	margin-right: -2rem;
 	line-height: 1.4rem;
 }
 
 h1 {
-	font-size: 2rem;
 	font-weight: bold;
 	margin: 0.67rem 0;
 }
+
+/*///Mid-Section///*/
+
+.mid-section-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 960px;
+	margin: auto;
+}
+
+.services {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin: 3rem 6rem;
+	width: 5rem;
+	height: 8rem;
+}
+
+.icon {
+	width: 3.5rem;
+}
+
+.icon-mod {
+	width: 5rem;
+}
+
+/*///Philosophy///*/
+
+.bottom-section {
+	margin-bottom: 5rem;
+}
+
+.bottom-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 960px;
+	margin: auto;
+
+}
+
+.philosophy {
+	display: flex;
+	flex-direction: column;
+	
+	margin-right: 5%;
+}
+
+.philosophy-info {
+	margin-top: 1rem;
+}
+
+.philosophy .title {
+	background-color: cadetblue;
+	padding: 0.5rem 1.25rem;
+	font-weight: bold;
+	color: white;
+	font-size: 1rem;
+}
+
+.appointments {
+	display: flex;
+	flex-direction: column;
+}
+
+.appointments .title {
+	background-color: cadetblue;
+	padding: 0.5rem 1.25rem;
+	font-weight: bold;
+	color: white;
+	font-size: 1rem;
+}
+
+.appointments-info {
+	margin-top: 1rem;
+}
+
+/*///Footer///*/
+
+footer {
+	background-color: azure;
+	display: flex;
+	align-items: center;
+}
+
+footer .container {
+	max-width: 960px;
+	margin: auto;
+}
+
+footer img {
+	display: inline-block;
+	height: 1.5rem;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	padding-left: 4rem;
+	padding-right: 1rem;
+}
+
+
